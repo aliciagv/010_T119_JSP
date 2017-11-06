@@ -13,8 +13,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <% for (int i=1; i<=10; i++) {%>
-        <h1>1 x <%=i%> = <%=i%></h1>
-        <%}%>
+        <% for (int i=1; i<=10; i++) {
+            for (int j=1; j<=10; j++) {%>
+                <h1><%=i%> x <%=j%> = <%=i* j%></h1>
+        <%}
+        }%>
     </body>
 </html>
